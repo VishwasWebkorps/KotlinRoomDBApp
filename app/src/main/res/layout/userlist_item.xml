@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ciUserProfile"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/demo"
+            android:layout_marginTop="20dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/ciUserProfile"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_below="@id/tvUsername"
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/ciUserProfile"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_below="@id/tvUserEmail"
+            android:id="@+id/tvUserMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/ciUserProfile"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_below="@id/tvUserMobile"
+            android:id="@+id/tvUserDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_below="@id/tvUserMobile"
+            android:id="@+id/tvUserEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_toLeftOf="@id/tvUserDelete"
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
